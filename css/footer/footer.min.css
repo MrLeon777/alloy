@@ -1,0 +1,213 @@
+/*============ HEADER =============*/
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url("../fonts/Inter-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-ExtraBold';
+  src: url("../fonts/Inter-ExtraBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url("../fonts/Inter-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.trassir-footer {
+  background: #050081;
+}
+
+.trassir-footer__wrapper {
+  padding: 40px 20px 30px 20px;
+}
+
+@media (min-width: 1440px) {
+  .trassir-footer__wrapper {
+    padding: 40px 0 30px 0;
+  }
+}
+
+@media (min-width: 1220px) {
+  .trassir-footer__blocks {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1220px) {
+  .trassir-footer__block {
+    width: 12%;
+  }
+}
+
+.trassir-footer__logo {
+  margin: 0 0 50px 0;
+}
+
+.trassir-footer__logo img {
+  width: 150px;
+}
+
+.trassir-footer__block-title {
+  padding: 0 0 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trassir-footer__block-title p {
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  font-family: "Inter-SemiBold", "Arial", sans-serif;
+  color: #ffffff;
+  font-weight: 200;
+  text-transform: none;
+  text-decoration: none;
+}
+
+@media (min-width: 1220px) {
+  .trassir-footer__block-title svg {
+    display: none;
+  }
+}
+
+.trassir-footer__block-list {
+  height: 0px;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media (min-width: 1220px) {
+  .trassir-footer__block-list {
+    height: auto;
+    border-bottom: none;
+  }
+}
+
+.trassir-footer__block-list_active {
+  height: auto;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.trassir-footer__block-item {
+  padding: 0 0 20px 0;
+  list-style: none;
+}
+
+.trassir-footer__block-item:last-child {
+  padding: 0 0 25px 0;
+}
+
+.trassir-footer__block-item a {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: "Inter-Regular", "Arial", sans-serif;
+  color: #ffffff;
+  font-weight: 200;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.trassir-footer__block-item a:hover {
+  color: #5246FF;
+}
+
+@media (min-width: 1024px) {
+  .trassir-footer__bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.trassir-footer__bottom-socials {
+  padding: 25px 0;
+}
+
+.trassir-footer__bottom-socials a {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+
+.trassir-footer__bottom-socials a:hover svg path {
+  fill: #5246FF;
+}
+
+.trassir-footer__link {
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 1024px) {
+  .trassir-footer__link {
+    margin: 0;
+  }
+}
+
+.trassir-footer__link:hover a {
+  color: #5246FF;
+}
+
+.trassir-footer__link a {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-family: "Inter-Regular", "Arial", sans-serif;
+  color: #ffffff;
+  font-weight: 200;
+  text-transform: none;
+  text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+  .trassir-footer__grid {
+    width: 15%;
+  }
+}
+
+.trassir-close {
+  display: none;
+}
+
+.trassir-open {
+  display: none;
+}
+
+.open-active {
+  display: block;
+}

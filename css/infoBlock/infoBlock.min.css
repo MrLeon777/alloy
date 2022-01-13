@@ -1,0 +1,21 @@
+/*============ INFO - BLOCK =============*/
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url("../fonts/Inter-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-ExtraBold';
+  src: url("../fonts/Inter-ExtraBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url("../fonts/Inter-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
