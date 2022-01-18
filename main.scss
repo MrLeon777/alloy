@@ -538,8 +538,8 @@ a {
 
 @media screen and (max-width: 768px) {
   .alloy-main-slider .alloy-main-slider__arrows {
-  display: none;
-}
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -918,7 +918,6 @@ a {
 .tab-nav-item {
   position: relative;
   padding: 16px 0;
-
 }
 
 .tab-nav-item:last-child {
@@ -929,7 +928,6 @@ a {
   .tab-nav-item {
     margin: 0 55px 0 0;
     padding: 25px 0;
-
   }
 }
 @media (max-width: 1024px) {
@@ -1962,14 +1960,259 @@ a {
     }
   }
 }
-.alloy-welding__slider, .alloy-parts__slider, 
-.alloy-production__slider, .alloy-trust__slider {
+.alloy-welding__slider,
+.alloy-parts__slider,
+.alloy-production__slider,
+.alloy-trust__slider {
   @media screen and (max-width: 1024px) {
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
       opacity: 0.35;
     }
-    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled { 
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
       display: none;
     }
+  }
+}
+
+.alloy-contacts {
+  padding-top: 200px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  &__address {
+    color: #5d5d5d;
+    margin-bottom: 70px;
+    h2 {
+      font-family: "Roboto-Medium", "Arial", sans-serif;
+      font-weight: 500;
+      font-size: 38px;
+      margin-bottom: 31px;
+    }
+    p {
+      font-family: "Roboto-Regular", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 19px;
+      margin-bottom: 21px;
+    }
+    h3 {
+      font-family: "Roboto-Medium", "Arial", sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (max-width: 425px) {
+      margin-bottom: 20px;
+      h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+    @media (max-width: 320px) {
+      margin-bottom: 20px;
+      h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__map {
+    width: 788px;
+    height: 500px;
+    #map {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    @media screen and (max-width: 1024px) {
+      width: 650px;
+      height: 500px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 500px;
+    }
+  }
+  &__forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #b2b4b3;
+    font-family: "Roboto-Regular", "Arial", sans-serif;
+    p {
+      font-size: 19px;
+      margin-bottom: 40px;
+      font-weight: 400;
+      color: #5d5d5d;
+      @media (max-width: 768px) {
+        margin-top: 20px;
+      }
+    }
+    &-item {
+      margin-bottom: 15px;
+      h4 {
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+      input {
+        border: none;
+        background: #e6e6e6;
+        border-radius: 5px;
+        font-family: "Roboto-Regular", "Arial", sans-serif;
+        font-size: 19px;
+        padding: 10px 20px;
+        width: 330px;
+        &:focus {
+          outline: 2px solid #5d5d5d;
+        }
+      }
+      &:nth-child(3n + 1) {
+        input {
+          width: 430px;
+        }
+      }
+      @media (max-width: 1024px) {
+        input {
+          width: 280px;
+        }
+        &:nth-child(3n + 1) {
+          input {
+            width: 400px;
+          }
+        }
+      }
+      @media (max-width: 768px) {
+        input {
+          width: 350px;
+        }
+        &:nth-child(3n + 1) {
+          input {
+            width: 350px;
+          }
+        }
+      }
+      @media (max-width: 425px) {
+        width: 100%;
+        input {
+          width: 100%;
+        }
+        &:nth-child(3n + 1) {
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__letter {
+    color: #b2b4b3;
+    font-family: "Roboto-Regular", "Arial", sans-serif;
+    h4 {
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    &-theme {
+      margin-bottom: 15px;
+      select {
+        border: none;
+        background: #e6e6e6;
+        border-radius: 5px;
+        font-family: "Roboto-Regular", "Arial", sans-serif;
+        font-size: 19px;
+        padding: 10px;
+        width: 330px;
+        &:focus {
+          outline: 1px solid #5d5d5d;
+        }
+        @media (max-width: 320px) {
+          width: 100%;
+        }
+      }
+    }
+    &-text {
+      margin-bottom: 15px;
+      textarea {
+        border: none;
+        outline: none;
+        background: #e6e6e6;
+        border-radius: 5px;
+        font-family: "Roboto-Regular", "Arial", sans-serif;
+        font-size: 19px;
+        padding: 10px;
+        width: 685px;
+        height: 200px;
+        resize: none;
+        &:focus {
+          outline: 1px solid #5d5d5d;
+        }
+      }
+      @media (max-width: 425px) {
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+    &-file {
+      &_button {
+        margin-top: 30px;
+        position: relative;
+        input {
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+        }
+        label {
+          margin-top: 10px;
+          background-color: #5d5d5d;
+          color: #fff;
+          padding: 15px 30px;
+          border-radius: 10px;
+          &:hover {
+            background-color: #b2b4b3;
+            transition: all 0.5s;
+          }
+        }
+      }
+      margin-bottom: 60px;
+    }
+    &-send {
+      button {
+        border: none;
+        background-color: #ffa926;
+        font-family: "Roboto-Regular", "Arial", sans-serif;
+        font-size: 16px;
+        color: #fff;
+        padding: 15px 120px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: darken(#ffa926, 10%);
+          transition: all 0.5s;
+        }
+        @media (max-width: 320px) {
+          padding: 15px 105px;
+        }
+      }
+      margin-bottom: 70px;
+    }
+  }
+  @media (max-width: 768px) {
+    padding-top: 100px;
   }
 }
