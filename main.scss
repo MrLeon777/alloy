@@ -2130,8 +2130,13 @@ a {
     &-theme {
       margin-bottom: 15px;
       select {
+        appearance: none;
+        background: url("img/expand.svg") no-repeat right center;
+        background-size: 10px;
+        background-position-x: calc(100% - 8px);
+
         border: none;
-        background: #e6e6e6;
+        background-color: #e6e6e6;
         border-radius: 5px;
         font-family: "Roboto-Regular", "Arial", sans-serif;
         font-size: 19px;
@@ -2257,8 +2262,13 @@ a {
           text-transform: uppercase;
         }
         select {
+          appearance: none;
+          background: url("img/expand.svg") no-repeat right center;
+          background-size: 10px;
+          background-position-x: calc(100% - 8px);
+
           border: none;
-          background: #e6e6e6;
+          background-color: #e6e6e6;
           border-radius: 5px;
           font-family: "Roboto-Regular", "Arial", sans-serif;
           font-size: 19px;
@@ -2270,6 +2280,7 @@ a {
           @media (max-width: 768px) {
             width: 100%;
           }
+
         }
         &:nth-child(2) {
           select {
@@ -2393,10 +2404,15 @@ a {
             text-transform: uppercase;
           }
           select {
+            appearance: none;
+            background: url("./img/expand.svg") no-repeat right center;
+            background-size: 10px;
+            background-position-x: calc(100% - 8px);
+
             color: #5d5d5d;
             border: none;
             margin: 15px 0;
-            background: #e6e6e6;
+            background-color: #e6e6e6;
             border-radius: 5px;
             font-family: "Roboto-Regular", "Arial", sans-serif;
             font-size: 19px;
@@ -2415,6 +2431,10 @@ a {
             border-radius: 10px;
             color: #fff;
             text-decoration: none;
+            &:hover {
+              background-color: lighten(#5d5d5d, 10%);
+              transition: all 0.5s;
+            }
           }
         }
       }
