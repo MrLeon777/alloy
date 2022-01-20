@@ -2455,4 +2455,379 @@ a {
     padding-top: 100px;
   }
 }
+
+.alloy-configurator-first {
+  padding-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .alloy-configurator-first {
+    padding-top: 100px;
+  }
+}
+
+.alloy-configurator-first-wrapper h1 {
+  text-align: center;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-size: 34px;
+  color: #5d5d5d;
+}
+
+@media (max-width: 425px) {
+  .alloy-configurator-first-wrapper h1 {
+    font-size: 28px;
+  }
+}
+
+.alloy-configurator-first-wrapper__dropdown {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .alloy-configurator-first-wrapper__dropdown {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .alloy-configurator-first-wrapper__dropdown-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.alloy-configurator-first-wrapper__dropdown-item {
+  margin-left: 20px;
+  color: #b2b4b3;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+}
+
+.alloy-configurator-first-wrapper__dropdown-item h4 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #5d5d5d;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.alloy-configurator-first-wrapper__dropdown-item select {
+  border: none;
+  background: #e6e6e6;
+  border-radius: 5px;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  font-size: 19px;
+  padding: 10px;
+  width: 330px;
+}
+
+.alloy-configurator-first-wrapper__dropdown-item select:focus {
+  outline: 1px solid #5d5d5d;
+}
+
+@media (max-width: 768px) {
+  .alloy-configurator-first-wrapper__dropdown-item select {
+    width: 100%;
+  }
+}
+
+.alloy-configurator-first-wrapper__dropdown-item:nth-child(2) select {
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .alloy-configurator-first-wrapper__dropdown-item {
+    margin-left: 0px;
+  }
+  .alloy-configurator-first-wrapper__dropdown-item:nth-child(2) select {
+    width: 100%;
+  }
+}
+
+.alloy-configurator-first-wrapper .alloy-devices__tab-nav-inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alloy-configurator-first-wrapper .alloy-devices__block-content {
+  position: relative;
+}
+
+.alloy-configurator-first-wrapper .alloy-devices__block-content svg {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.alloy-configurator-second {
+  padding: 150px 0;
+}
+
+.alloy-configurator-second-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .alloy-configurator-second-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.alloy-configurator-second-wrapper__characteristic {
+  color: #5d5d5d;
+}
+
+.alloy-configurator-second-wrapper__characteristic-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+.alloy-configurator-second-wrapper__characteristic-title svg {
+  -webkit-transform: rotate(180deg) scale(1.5);
+          transform: rotate(180deg) scale(1.5);
+  margin-right: 15px;
+}
+
+@media (max-width: 1024px) {
+  .alloy-configurator-second-wrapper__characteristic-title {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.alloy-configurator-second-wrapper__characteristic ul li {
+  text-align: right;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  margin-bottom: 16px;
+}
+
+.alloy-configurator-second-wrapper__characteristic ul li:last-child {
+  margin-bottom: 0;
+}
+
+.alloy-configurator-second-wrapper__characteristic ul li span {
+  font-size: 26px;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  text-transform: none;
+}
+
+@media (max-width: 1024px) {
+  .alloy-configurator-second-wrapper__characteristic ul li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .alloy-configurator-second-wrapper__characteristic ul {
+    margin-bottom: 30px;
+  }
+}
+
+.alloy-configurator-second-wrapper__config-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.alloy-configurator-second-wrapper__config-icons svg {
+  margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  .alloy-configurator-second-wrapper__config-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.alloy-configurator-second-wrapper__config-add_equip {
+  padding: 20px;
+  background-color: #f5f2f2;
+}
+
+.alloy-configurator-second-wrapper__config-add_equip h2 {
+  margin-bottom: 20px;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #5d5d5d;
+  text-transform: uppercase;
+  margin-right: 80px;
+}
+
+.alloy-configurator-second-wrapper__config-add_equip-item {
+  color: #b2b4b3;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.alloy-configurator-second-wrapper__config-add_equip-item:last-child {
+  margin-bottom: 0;
+}
+
+.alloy-configurator-second-wrapper__config-add_equip-item h4 {
+  font-weight: 400;
+  color: #5d5d5d;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.alloy-configurator-second-wrapper__config-add_equip-item select {
+  color: #5d5d5d;
+  border: none;
+  margin: 15px 0;
+  background: #e6e6e6;
+  border-radius: 5px;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  font-size: 19px;
+  padding: 10px;
+  width: 100%;
+}
+
+.alloy-configurator-second-wrapper__config-add_equip-item select:focus {
+  outline: 1px solid #5d5d5d;
+}
+
+.alloy-configurator-second-wrapper__config-add_equip-item a {
+  display: block;
+  background-color: #5d5d5d;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.alloy-configurator-second-wrapper__config-done {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f5f2f2;
+  color: #5d5d5d;
+}
+
+.alloy-configurator-second-wrapper__config-done h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.alloy-configurator-second-wrapper__config-done__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alloy-configurator-second-wrapper__config-done__list-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.alloy-configurator-second-wrapper__config-done__list ul {
+  list-style-type: none;
+}
+
+.alloy-configurator-second-wrapper__config-done__list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.alloy-configurator-second-wrapper__config-done__list ul li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .alloy-configurator-second-wrapper__config-done__list ul li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.alloy-configurator-second-wrapper__config-done button {
+  margin-top: 20px;
+  border: none;
+  background-color: #ffa926;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.alloy-configurator-second-wrapper__config-done button:hover {
+  background-color: #f29200;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 /*# sourceMappingURL=main.css.map */
