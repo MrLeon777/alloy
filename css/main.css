@@ -709,7 +709,6 @@ a {
 .alloy-devices__nav-catalog a {
   padding: 7px 85px;
   width: 100%;
-  max-width: 332px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -851,6 +850,9 @@ a {
 @media (min-width: 1024px) {
   .alloy-devices__tab-top li {
     margin: 0 95px 0 0;
+  }
+  .alloy-devices__tab-top li:last-child {
+    margin: 0;
   }
 }
 
@@ -1549,35 +1551,103 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+}
+
+.alloy-products__block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 2;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  overflow: hidden;
+  width: 1138px;
+  padding-top: 40px;
 }
 
-@media screen and (max-width: 768px) {
-  .alloy-products__block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 670px;
+@media (max-width: 1024px) {
+  .alloy-products__block-item {
+    width: 992px;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .alloy-products__block {
-    height: 1050px;
+@media (max-width: 768px) {
+  .alloy-products__block-item {
+    width: 732px;
+  }
+}
+
+@media (max-width: 425px) {
+  .alloy-products__block-item {
+    width: 392px;
+  }
+}
+
+@media (max-width: 375px) {
+  .alloy-products__block-item {
+    width: 342px;
+  }
+}
+
+@media (max-width: 320px) {
+  .alloy-products__block-item {
+    width: 302px;
+  }
+}
+
+.alloy-products__block-item.active {
+  -webkit-transform: translateX(-1138px);
+          transform: translateX(-1138px);
+}
+
+@media (max-width: 1024px) {
+  .alloy-products__block-item.active {
+    -webkit-transform: translateX(-992px);
+            transform: translateX(-992px);
+  }
+}
+
+@media (max-width: 768px) {
+  .alloy-products__block-item.active {
+    -webkit-transform: translateX(-732px);
+            transform: translateX(-732px);
+  }
+}
+
+@media (max-width: 425px) {
+  .alloy-products__block-item.active {
+    -webkit-transform: translateX(-392px);
+            transform: translateX(-392px);
+  }
+}
+
+@media (max-width: 375px) {
+  .alloy-products__block-item.active {
+    -webkit-transform: translateX(-342px);
+            transform: translateX(-342px);
+  }
+}
+
+@media (max-width: 320px) {
+  .alloy-products__block-item.active {
+    -webkit-transform: translateX(-302px);
+            transform: translateX(-302px);
   }
 }
 
 .alloy-products__block-article {
   z-index: 2;
   position: relative;
-}
-
-.alloy-products__block-article h1 {
-  padding-top: 136px;
 }
 
 .alloy-products__block-list {
@@ -1612,6 +1682,10 @@ a {
   max-height: 610px;
   z-index: 1;
   left: 290px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1640,25 +1714,24 @@ a {
   height: 100%;
 }
 
-.alloy-products__block-characteristic {
+.alloy-products__block-btn {
   position: relative;
   z-index: 2;
   margin: auto 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media screen and (max-width: 768px) {
-  .alloy-products__block-characteristic {
-    margin: auto;
+  .alloy-products__block-btn {
+    margin: 35px auto;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .alloy-products__block-characteristic {
-    margin: 0 auto 100px auto;
-  }
-}
-
-.alloy-products__block-characteristic span {
+.alloy-products__block-btn span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1666,23 +1739,109 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Roboto-Regular", "Arial", sans-serif;
+  text-transform: uppercase;
   color: #5d5d5d;
   font-size: 18px;
-  padding-right: 75px;
 }
 
-.alloy-products__block-characteristic span svg {
+.alloy-products__block-btn span svg {
   margin-left: 10px;
 }
 
-.alloy-products__block-characteristic span:last-child {
+.alloy-products__block-btn span:last-child {
   position: absolute;
   font-size: 124px;
   color: #e6e6e6;
-  left: 69px;
+  right: 0;
   top: -62px;
   z-index: -1;
   padding-right: 0;
+}
+
+.alloy-products__block-description span:first-child {
+  padding-right: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  .alloy-products__block-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .alloy-products__block-description {
+    height: 1050px;
+  }
+  .alloy-products__block-description .alloy-products__block-btn {
+    margin: 0 auto 35px;
+  }
+}
+
+.alloy-products__block-characteristic .alloy-products__block-btn span:first-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-left: 70px;
+}
+
+.alloy-products__block-characteristic .alloy-products__block-btn span:last-child {
+  left: 0;
+}
+
+.alloy-products__block-characteristic .alloy-products__block-btn span svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.alloy-products__block-characteristic table {
+  width: 100%;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+}
+
+.alloy-products__block-characteristic table caption {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #5d5d5d;
+}
+
+.alloy-products__block-characteristic table tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+.alloy-products__block-characteristic table td:first-child {
+  padding: 10px 0;
+  padding-left: 10px;
+  width: 70%;
+}
+
+.alloy-products__block-characteristic table td:last-child {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .alloy-products__block-characteristic table {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .alloy-products__block-characteristic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .alloy-products__block-characteristic table {
+    margin-left: 0;
+  }
 }
 
 .alloy-products-control {

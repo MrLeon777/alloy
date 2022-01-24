@@ -55,6 +55,14 @@ const swiperTrustPage = new Swiper(".alloy-trust-slider", {
 });
 
 //Слайдеры на странице "Продукты"
+const swiperProductCard = new Swiper(".alloy-products__slider", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".alloy-products__block-characteristic",
+    prevEl: ".alloy-advantage-slider__prev",
+  },
+});
+
 const swiperProductAdvantage = new Swiper(".alloy-advantage__slider", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -126,7 +134,6 @@ const swiperProductTrust = new Swiper(".alloy-trust__slider", {
 // Табы в разделе "Каталог"
 
 const tab = document.querySelectorAll(".tab");
-console.log(tab);
 const onClickTabNavLink = () => {
   Array.prototype.forEach.call(tab, (e) => {
     const tabNavLinks = e.querySelectorAll(".tab-nav-link");
