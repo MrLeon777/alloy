@@ -1669,7 +1669,7 @@ a {
       svg {
         margin-left: 10px;
       }
-      
+
       &:last-child {
         position: absolute;
         font-size: 124px;
@@ -1694,7 +1694,7 @@ a {
     @media screen and (max-width: 425px) {
       height: 1050px;
       .alloy-products__block-btn {
-         margin: 0 auto 35px;
+        margin: 0 auto 35px;
       }
     }
   }
@@ -2597,6 +2597,95 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+.alloy-technologies-screen {
+  h1 {
+    font-size: 65px;
+  }
+  p {
+    font-family: "Roboto-Regular", "Arial", sans-serif;
+    color: #d9dada;
+    font-size: 14px;
+  }
+}
+
+.alloy-technologies-tab {
+  .tab-nav {
+    justify-content: space-between;
+  }
+  .alloy-devices__tab-top li {
+    margin: 0;
+    @media (max-width: 425px) {
+    margin-left: 12px;
+  }
+  }
+}
+
+.alloy-technologies__block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  @media (max-width: 425px) {
+    flex-direction: column;
+    &-image {
+      margin-top: 30px;
+    }
+  }
+  &-article {
+    font-family: "Roboto-Regular", "Arial", sans-serif;
+    color: #5d5d5d;
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 16px;
+      span {
+        font-weight: 700;
+      }
+    }
+    h3 {
+      font-size: 14px;
+    }
+    .alloy-technologies__block-list {
+      list-style-image: url("../img/list-marker.svg");
+      margin-left: 16px;
+      li {
+        margin-top: 10px;
+      }
+    }
+  }
+  
+}
+
+.alloy-technologies__welding {
+  margin-bottom: 150px;
+  &-article {
+    color: #d9dada;
+    font-family: "Roboto-Regular", "Arial", sans-serif;
+    padding: 69px 0 120px 0;
+    h2 {
+    }
+    h3 {
+      font-size: 16px;
+      color: #fff;
+      font-weight: 400;
+    }
+    p {
+      margin: 30px 0 20px 0;
+      span {
+        color: #fff;
+      }
+    }
+  }
+  &-list {
+    list-style-image: url("../img/list-marker.svg");
+    margin-left: 16px;
+    li {
+      margin-top: 10px;
     }
   }
 }

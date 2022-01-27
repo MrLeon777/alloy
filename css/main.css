@@ -3013,4 +3013,116 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+.alloy-technologies-screen h1 {
+  font-size: 65px;
+}
+
+.alloy-technologies-screen p {
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  color: #d9dada;
+  font-size: 14px;
+}
+
+.alloy-technologies-tab .tab-nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alloy-technologies-tab .alloy-devices__tab-top li {
+  margin: 0;
+}
+
+@media (max-width: 425px) {
+  .alloy-technologies-tab .alloy-devices__tab-top li {
+    margin-left: 12px;
+  }
+}
+
+.alloy-technologies__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+@media (max-width: 425px) {
+  .alloy-technologies__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .alloy-technologies__block-image {
+    margin-top: 30px;
+  }
+}
+
+.alloy-technologies__block-article {
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  color: #5d5d5d;
+}
+
+.alloy-technologies__block-article h1 {
+  font-size: 35px;
+}
+
+.alloy-technologies__block-article p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.alloy-technologies__block-article p span {
+  font-weight: 700;
+}
+
+.alloy-technologies__block-article h3 {
+  font-size: 14px;
+}
+
+.alloy-technologies__block-article .alloy-technologies__block-list {
+  list-style-image: url("../img/list-marker.svg");
+  margin-left: 16px;
+}
+
+.alloy-technologies__block-article .alloy-technologies__block-list li {
+  margin-top: 10px;
+}
+
+.alloy-technologies__welding {
+  margin-bottom: 150px;
+}
+
+.alloy-technologies__welding-article {
+  color: #d9dada;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  padding: 69px 0 120px 0;
+}
+
+.alloy-technologies__welding-article h3 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.alloy-technologies__welding-article p {
+  margin: 30px 0 20px 0;
+}
+
+.alloy-technologies__welding-article p span {
+  color: #fff;
+}
+
+.alloy-technologies__welding-list {
+  list-style-image: url("../img/list-marker.svg");
+  margin-left: 16px;
+}
+
+.alloy-technologies__welding-list li {
+  margin-top: 10px;
+}
 /*# sourceMappingURL=main.css.map */
